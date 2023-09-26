@@ -11,8 +11,8 @@ const setUpAndStartServer=async()=>{
     app.use(bodyParser.urlencoded({extended:true}))
     app.use("/api",ApiRoutes)
 
-    app.listen(PORT,()=>{
-        console.log(`server runing at ${PORT}`)
+    app.listen(PORT||4000,()=>{
+        console.log(`server runing at ${PORT||4000}`)
        
     })
 
